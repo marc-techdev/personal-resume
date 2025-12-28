@@ -3,72 +3,133 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Resume</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Marc Ryan Dela Cruz - Resume</title>
 </head>
 <body>
-  <hr>
-  <img src="./assets/images/facebookProfile.jpg" alt="">
-  <h1>Marc Ryan Dela Cruz</h1>
-  <h2>Pandi Poblacion, Bulacan, Philippines</h2>
-  <p>Email: marc-techdev@gmail.com
- | Phone: 09685202538 | GitHub: <a href="https://github.com/marc-techdev">github.com/marc-techdev</a></p>
-<hr>
- <h2>Objective:</h2>
- <p>Motivated and detail-oriented Computer Science student seeking opportunities in web and mobile app <br>
-  development. Passionate about learning new technologies, building practical projects, and contributing to <br>
-  innovative solutions.</p>
-<hr>
-<h2>Education:</h2>
-  <h3>Bachelor of Science in Computer Science</h3>
-  <p>Immaculate Conception Institution (ICI), Bulacan, Philippines</p>
-  <p>Expected Graduation: 2026</p>
+  <div class="container">
+    <!-- Header Section -->
+    <header class="header">
+      <div class="header-content">
+        <div class="profile-section">
+          <img src="./assets/images/facebookProfile.jpg" alt="Marc Ryan Dela Cruz" class="profile-img">
+          <div class="header-text">
+            <h1 class="name">Marc Ryan Dela Cruz</h1>
+            <p class="location">Pandi Poblacion, Bulacan, Philippines</p>
+          </div>
+        </div>
+        <div class="contact-info">
+          <div class="contact-item">
+            <span class="label">Email:</span>
+            <a href="mailto:marc-techdev@gmail.com">marc-techdev@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="label">Phone:</span>
+            <span>09685202538</span>
+          </div>
+          <div class="contact-item">
+            <span class="label">GitHub:</span>
+            <a href="https://github.com/marc-techdev" target="_blank">github.com/marc-techdev</a>
+          </div>
+        </div>
+      </div>
+    </header>
 
-<h3>Relevant Coursework:</h3>
-  <p>Web Development, Mobile App Development, Machine Learning, Database Management</p>
-<hr>
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Objective Section -->
+      <section class="section">
+        <h2 class="section-title">Objective</h2>
+        <p class="objective-text">Motivated and detail-oriented Computer Science student seeking opportunities in web and mobile app development. Passionate about learning new technologies, building practical projects, and contributing to innovative solutions.</p>
+      </section>
 
-<h2>Work Experience:</h2>
-  <ol>
-    <li><h3>On-the-Job Trainee (OJT) – Social Security System (SSS), Bulacan | May 2025 – August 2025</h3>
-      <ul>
-        <li>Assisted in encoding and processing data as instructed by the advisor.</li>
-        <li>Helped clients in the absence of advisors, providing guidance and support.</li>
-        <li>Contributed to office tasks to improve workflow and efficiency.</li>
-      </ul>
-    </li>
+      <!-- Education Section -->
+      <section class="section">
+        <h2 class="section-title">Education</h2>
+        <div class="education-item">
+          <h3 class="item-title">Bachelor of Science in Computer Science</h3>
+          <p class="institution">Immaculate Conception Institution (ICI), Bulacan, Philippines</p>
+          <p class="date">Expected Graduation: 2026</p>
+        </div>
+        <div class="subsection">
+          <h4 class="subsection-title">Relevant Coursework</h4>
+          <p>Web Development, Mobile App Development, Machine Learning, Database Management</p>
+        </div>
+      </section>
 
-    <li><h3>Barista – Coffee Negra, Santa Maria, Bulacan | 2024 – 2025</h3>
-      <ul>
-        <li>Provided customer service, prepared beverages, and maintained cleanliness.</li>
-        <li>Managed inventory, tracked stocks, and purchased necessary supplies.</li>
-        <li>Handled cash transactions and ensured accurate money management.</li>
-      </ul>
-    </li>
-  </ol>
+      <!-- Work Experience Section -->
+      <section class="section">
+        <h2 class="section-title">Work Experience</h2>
+        
+        <div class="experience-item">
+          <h3 class="item-title">On-the-Job Trainee (OJT)</h3>
+          <p class="company">Social Security System (SSS), Bulacan</p>
+          <p class="date">May 2025 – August 2025</p>
+          <ul class="responsibilities">
+            <li>Assisted in encoding and processing data as instructed by the advisor.</li>
+            <li>Helped clients in the absence of advisors, providing guidance and support.</li>
+            <li>Contributed to office tasks to improve workflow and efficiency.</li>
+          </ul>
+        </div>
 
-<h2>Skills:</h2>
-<ul>
-  <li>Programming Languages: JavaScript (beginner/familiar)</li>
-  <li>Web Development: HTML, CSS</li>
-  <li>Mobile App Development: Android Studio</li>
-  <li>Databases: MySQL (basic knowledge)</li>
-  <li>Tools: Git, GitHub, VS Code, Android Studio</li>
-</ul>
+        <div class="experience-item">
+          <h3 class="item-title">Barista</h3>
+          <p class="company">Coffee Negra, Santa Maria, Bulacan</p>
+          <p class="date">2024 – 2025</p>
+          <ul class="responsibilities">
+            <li>Provided customer service, prepared beverages, and maintained cleanliness.</li>
+            <li>Managed inventory, tracked stocks, and purchased necessary supplies.</li>
+            <li>Handled cash transactions and ensured accurate money management.</li>
+          </ul>
+        </div>
+      </section>
 
-<h3>Awards & Certifications</h3>
-<ul>
-  <li>Completed “The Complete Web Development Bootcamp” by Angela Yu (Udemy)</li>
-</ul>
+      <!-- Skills Section -->
+      <section class="section">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h4 class="skill-category-title">Programming Languages</h4>
+            <p>JavaScript (beginner/familiar)</p>
+          </div>
+          <div class="skill-category">
+            <h4 class="skill-category-title">Web Development</h4>
+            <p>HTML, CSS</p>
+          </div>
+          <div class="skill-category">
+            <h4 class="skill-category-title">Mobile Development</h4>
+            <p>Android Studio</p>
+          </div>
+          <div class="skill-category">
+            <h4 class="skill-category-title">Databases</h4>
+            <p>MySQL (basic knowledge)</p>
+          </div>
+          <div class="skill-category">
+            <h4 class="skill-category-title">Tools & Platforms</h4>
+            <p>Git, GitHub, VS Code, Android Studio</p>
+          </div>
+        </div>
+      </section>
 
-<hr>
+      <!-- Awards & Certifications Section -->
+      <section class="section">
+        <h2 class="section-title">Awards & Certifications</h2>
+        <ul class="certifications-list">
+          <li>Completed "The Complete Web Development Bootcamp" by Angela Yu (Udemy)</li>
+        </ul>
+      </section>
+    </main>
 
-<footer>
-  <a href="./public/about.html">About Me</a>
-  <a href="./public/contact.html">Contact Me</a>
-
-    <p>© 2025 Marc</p>
-</footer>
-
-
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="./public/about.html">About Me</a>
+        <span class="separator">•</span>
+        <a href="./public/contact.html">Contact Me</a>
+      </div>
+      <p class="copyright">© 2025 Marc Ryan Dela Cruz</p>
+    </footer>
+  </div>
 </body>
 </html>
